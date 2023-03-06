@@ -21,6 +21,8 @@ In my free time, I enjoy parametric design and creating things from eco-tank.<br
 
 HTML5,CSS <br>
 JavaScript <br>
+Node.JS
+React
 Git,GitHab <br>
 Visual Basic <br>
 SQL <br>
