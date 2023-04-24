@@ -1,2 +1,58 @@
-:root{box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    box-sizing: border-box;
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Abril Fatface', cursive;*/
+}
 *,::before,::after{box-sizing: inherit;}
+
+
+.head{
+    
+    display: flex;
+    flex-direction: row;
+    margin: 5vw;
+}
+
+.top-foto{
+
+    width:30vw;
+    height:30vw;
+    background-image: url('./images/MyFoto.JPG');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.name{
+    width: 100%;
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    font-weight: 300;
+    /*font-size: 2.51vw;*/
+    line-height: 110%;
+    letter-spacing: 0.06em;
+   
+
+}
+.name-lang{
+    margin-top: 3vw;
+ margin-left: 5vw;
+    margin-bottom: 5vw;
+
+}
+.contacts{
+    font-size:small;
+    font-weight: 400;
+}
+
+.contacts-li{
+    margin-bottom: 0.5vw;
+}
