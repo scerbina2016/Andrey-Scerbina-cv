@@ -8,51 +8,236 @@
     box-sizing: border-box;
     /*font-family: 'Roboto', sans-serif;*/
     /*font-family: 'Abril Fatface', cursive;*/
+    display: grid;
+    grid-template-columns: 1fr,1279px,1fr;
+    overflow-x: hidden;
 }
 *,::before,::after{box-sizing: inherit;}
 
+body{
 
-.head{
+    grid-column: 2/3;
+    max-width: 1279px;
+}
+
+.skills-list{
+    width: 50%;
+}
+
+@media screen and (min-width: 1280px) {
+    .head{
+        
+        display: flex;
+        flex-direction: row;
+        margin: 64px 64px 25px 64px;
+       
+    }
     
-    display: flex;
-    flex-direction: row;
-    margin: 5vw;
-}
-
-.top-foto{
-
-    width:30vw;
-    height:30vw;
-    background-image: url('./images/MyFoto.JPG');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    .top-foto{
     
-}
+        width:300px;
+        height:300px;
+        background-image: url('./images/MyFoto.JPG');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .name{
+        width: 70%;
+        /*font-family: 'Quicksand', sans-serif;*/
+        font-family: 'Roboto', sans-serif;
+        font-style:normal;
+        font-weight: 300;
+        /*font-size: 2.51vw;*/
+        line-height: 110%;
+        letter-spacing: 0.06em;
+       
+    
+    }
+    .name-lang{
+        margin-top: 10px;
+        margin-left: 64px;
+        margin-bottom: 0;
+        /*width: 100%;*/
+        font-size: 64px;
+        /*font-family: 'Quicksand', sans-serif;*/
+        font-family: 'Roboto', sans-serif;
+        font-style:normal;
+        font-weight: 700;
+        /*font-size: 2.51vw;*/
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    
+    }
 
-.name{
-    width: 100%;
-    /*font-family: 'Quicksand', sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    font-style:normal;
-    font-weight: 300;
-    /*font-size: 2.51vw;*/
-    line-height: 110%;
-    letter-spacing: 0.06em;
-   
+    .position{
+        font-size: 32px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+       /* margin-left: 15px;*/
 
-}
-.name-lang{
-    margin-top: 3vw;
- margin-left: 5vw;
-    margin-bottom: 5vw;
+    }
+    .contacts{
+        font-size:25px;
+        font-weight: 400;
+        margin-left: 64px;
+    }
+    
+    .contacts-li{
+        font-size: 25px;
+        line-height: 110%;
+        /*margin-bottom: 0.5vw;*/
+    }
+    
+    .about-myself{
+    
+        width: 1280px;
+        height:max-content;
+        border: 1px solid blue;
+    
+    }
+    
+    .about-myself-title,
+    .skills-title{
+        font-size: 48px;
+        /*font-family: 'Quicksand', sans-serif;*/
+        font-family: 'Roboto', sans-serif;
+        font-style:normal;
+        font-weight: 400;
+        /*font-size: 2.51vw;*/
+        line-height: 110%;
+        /*letter-spacing: 0.06em;*/
+        margin: 0 25px 0 25px;
+    }
+    .about-myself-content{
+        margin: 0 25px 0 25px;
+        text-align: justify;
+        font-size: 25px;
+    
+    }
+    .i-want{
+        font-style: italic;
+        font-weight: 700;
+    }
+    
+    .skills{
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: inherit;
+    }
+    }
 
-}
-.contacts{
-    font-size:small;
-    font-weight: 400;
-}
+    @media screen and (max-width: 1279px) {
+        .head{
+            
+            display: flex;
+            flex-direction: row;
+            margin: 5vw 5vw 5vw 5vw;
+           
+        }
+        
+        .top-foto{
+        
+            width:30vw;
+            height:30vw;
+            background-image: url('./images/MyFoto.JPG');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        
+        .name{
+            width: 70%;
+            /*font-family: 'Quicksand', sans-serif;*/
+            font-family: 'Roboto', sans-serif;
+            font-style:normal;
+            font-weight: 300;
+            /*font-size: 2.51vw;*/
+            line-height: 110%;
+            letter-spacing: 0.06em;
+           
+        
+        }
+        .name-lang{
+            margin-top: 1vw;
+            margin-left: 5vw;
+            margin-bottom: 0;
+            /*width: 100%;*/
+            font-size: 5vw;
+            /*font-family: 'Quicksand', sans-serif;*/
+            font-family: 'Roboto', sans-serif;
+            font-style:normal;
+            font-weight: 700;
+            /*font-size: 2.51vw;*/
+            line-height: 110%;
+            letter-spacing: 0.06em;
+        
+        }
 
-.contacts-li{
-    margin-bottom: 0.5vw;
-}
+        .position{
+            font-size: 2.5vw;
+            margin-top: 0.4vw;
+            margin-bottom: 2vw;
+           /* margin-left: 15px;*/
+    
+        }
+
+        .contacts{
+            font-size:2vw;
+            font-weight: 400;
+            margin-left: 5vw;
+            padding-inline-start: 2vw;
+            letter-spacing: normal;
+        }
+        
+        .contacts-li{
+            font-size: 2vw;
+            line-height: 110%;
+            /*margin-bottom: 0.5vw;*/
+        }
+        
+        .about-myself{
+        
+            width: 98vw;
+            height:max-content;
+            border: 1px solid blue;
+        
+        }
+        
+        .about-myself-title,
+        .skills-title{
+            font-size: 4vw;
+            /*font-family: 'Quicksand', sans-serif;*/
+            font-family: 'Roboto', sans-serif;
+            font-style:normal;
+            font-weight: 400;
+            /*font-size: 2.51vw;*/
+            line-height: 110%;
+            /*letter-spacing: 0.06em;*/
+            margin: 0 2vw 0 2vw;
+        }
+        .about-myself-content{
+            margin: 0 2vw 0 2vw;
+            text-align: justify;
+            font-size: 2vw;
+        
+        }
+        .i-want{
+            font-style: italic;
+            font-weight: 700;
+        }
+        
+        .skills{
+            font-size: 2vw;
+            display: flex;
+            flex-direction: row;
+            /*justify-content:space-between;*/
+            width: 98vw;
+            
+        }
+        }    
