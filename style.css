@@ -38,7 +38,13 @@ body{
     background-color: rgb(243, 249, 249);
 }
 
+#my-works{
+    flex-direction: column;
+    background-color: rgb(243, 249, 249);
+}
+
 @media screen and (min-width: 1280px) {
+    
     .head{
         width: 1280px;
         display: flex;
@@ -105,7 +111,8 @@ body{
         /*margin-bottom: 0.5vw;*/
     }
     
-    .about-myself{
+    .about-myself,
+    .works{
     
         width: 1280px;
         height:max-content;
@@ -115,7 +122,8 @@ body{
     }
     
     .about-myself-title,
-    .skills-title{
+    .skills-title,
+    .works-title{
         font-size: 48px;
         /*font-family: 'Quicksand', sans-serif;*/
         font-family: 'Roboto', sans-serif;
@@ -137,12 +145,14 @@ body{
         font-weight: 700;
     }
     
-    .skills{
+    .skills,
+    .works{
         font-size: 25px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: inherit;
+        margin-bottom: 25px;
     }
 
     .skill{
@@ -230,7 +240,8 @@ body{
             /*margin-bottom: 0.5vw;*/
         }
         
-        .about-myself{
+        .about-myself,
+        .works{
         
             width: 98vw;
             height:max-content;
@@ -262,12 +273,13 @@ body{
             font-weight: 700;
         }
         
-        .skills{
+        .skills,
+        .works{
             font-size: 2vw;
             display: flex;
             flex-direction: row;
             /*justify-content:space-between;*/
             width: 98vw;
-            
+            margin-bottom: 2vw;
         }
         }    
