@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    box-sizing: border-box;
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Abril Fatface', cursive;*/
+    display: grid;
+    grid-template-columns: 1fr,1279px,1fr;
+    overflow-x: hidden;
+}
+*,::before,::after{box-sizing: inherit;}
+
+body{
+
+    grid-column: 2/3;
+    max-width: 1279px;
+}
+
+.skills-list{
+    width: 50%;
+    background-color: rgb(229, 239, 248);
+}
+.education{
+    width: 50%;
+    background-color: rgb(229, 239, 248);
+}
+
+.head{
+    
+    background-color: rgb(229, 239, 248);
+}
+
+.about-myself{
+    background-color: rgb(243, 249, 249);
+}
+
+#my-works{
+    flex-direction: column;
+    background-color: rgb(243, 249, 249);
+}
+
+@media screen and (min-width: 1280px) {
+    
+    .head{
+        width: 1280px;
+        display: flex;
+        flex-direction: row;
+        margin: 64px 64px 25px 0;
+       
+    }
+    
+    .top-foto{
+    
+        width:300px;
+        height:300px;
+        background-image: url('./images/MyFoto.JPG');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .name{
+        width: 70%;
+        /*font-family: 'Quicksand', sans-serif;*/
+        font-family: 'Roboto', sans-serif;
+        font-style:normal;
+        font-weight: 300;
+        /*font-size: 2.51vw;*/
+        line-height: 110%;
+        letter-spacing: 0.06em;
+       
+    
+    }
+    .name-lang{
+        margin-top: 10px;
+        margin-left: 64px;
+        margin-bottom: 0;
+        /*width: 100%;*/
+        font-size: 64px;
+        /*font-family: 'Quicksand', sans-serif;*/
+        font-family: 'Roboto', sans-serif;
+        font-style:normal;
+        font-weight: 700;
+        /*font-size: 2.51vw;*/
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    
+    }
+
+    .position{
+        font-size: 32px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+       /* margin-left: 15px;*/
+
+    }
+    .contacts{
+        font-size:25px;
+        font-weight: 400;
+        margin-left: 64px;
+    }
+    
+    .contacts-li{
+        font-size: 25px;
+        line-height: 110%;
+        /*margin-bottom: 0.5vw;*/
+    }
+    
+    .about-myself,
+    .works{
+    
+        width: 1280px;
+        height:max-content;
+       
+        margin-bottom: 25px;
+    
+    }
+    
+    .about-myself-title,
+    .skills-title,
+    .works-title{
+        font-size: 48px;
+        /*font-family: 'Quicksand', sans-serif;*/
+        font-family: 'Roboto', sans-serif;
+        font-style:normal;
+        font-weight: 400;
+        /*font-size: 2.51vw;*/
+        line-height: 110%;
+        /*letter-spacing: 0.06em;*/
+        margin: 0 25px 0 25px;
+    }
+    .about-myself-content{
+        margin: 0 25px 0 25px;
+        text-align: justify;
+        font-size: 25px;
+    
+    }
+    .i-want{
+        font-style: italic;
+        font-weight: 700;
+    }
+    
+    .skills,
+    .works{
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: inherit;
+        margin-bottom: 25px;
+    }
+
+    .skill{
+
+        margin-left: 25px;
+
+    }
+    }
+
+    @media screen and (max-width: 1279px) {
+
+        .skill{
+
+            margin-left: 2vw;
+    
+        }
+
+
+        .head{
+            width: 98vw;
+            display: flex;
+            flex-direction: row;
+            margin: 5vw 5vw 2vw 0;
+           
+        }
+        
+        .top-foto{
+        
+            width:30vw;
+            height:30vw;
+            background-image: url('./images/MyFoto.JPG');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        
+        .name{
+            width: 70%;
+            /*font-family: 'Quicksand', sans-serif;*/
+            font-family: 'Roboto', sans-serif;
+            font-style:normal;
+            font-weight: 300;
+            /*font-size: 2.51vw;*/
+            line-height: 110%;
+            letter-spacing: 0.06em;
+           
+        
+        }
+        .name-lang{
+            margin-top: 1vw;
+            margin-left: 5vw;
+            margin-bottom: 0;
+            /*width: 100%;*/
+            font-size: 5vw;
+            /*font-family: 'Quicksand', sans-serif;*/
+            font-family: 'Roboto', sans-serif;
+            font-style:normal;
+            font-weight: 700;
+            /*font-size: 2.51vw;*/
+            line-height: 110%;
+            letter-spacing: 0.06em;
+        
+        }
+
+        .position{
+            font-size: 2.5vw;
+            margin-top: 0.4vw;
+            margin-bottom: 2vw;
+           /* margin-left: 15px;*/
+    
+        }
+
+        .contacts{
+            font-size:2vw;
+            font-weight: 400;
+            margin-left: 5vw;
+            padding-inline-start: 2vw;
+            letter-spacing: normal;
+        }
+        
+        .contacts-li{
+            font-size: 2vw;
+            line-height: 110%;
+            /*margin-bottom: 0.5vw;*/
+        }
+        
+        .about-myself,
+        .works{
+        
+            width: 98vw;
+            height:max-content;
+          
+            margin-bottom: 2vw;
+        
+        }
+        
+        .about-myself-title,
+        .skills-title{
+            font-size: 4vw;
+            /*font-family: 'Quicksand', sans-serif;*/
+            font-family: 'Roboto', sans-serif;
+            font-style:normal;
+            font-weight: 400;
+            /*font-size: 2.51vw;*/
+            line-height: 110%;
+            /*letter-spacing: 0.06em;*/
+            margin: 0 2vw 0 2vw;
+        }
+        .about-myself-content{
+            margin: 0 2vw 0 2vw;
+            text-align: justify;
+            font-size: 2vw;
+        
+        }
+        .i-want{
+            font-style: italic;
+            font-weight: 700;
+        }
+        
+        .skills,
+        .works{
+            font-size: 2vw;
+            display: flex;
+            flex-direction: row;
+            /*justify-content:space-between;*/
+            width: 98vw;
+            margin-bottom: 2vw;
+        }
+        }    
